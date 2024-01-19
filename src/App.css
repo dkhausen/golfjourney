@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
-}
+@media only screen and (max-width: 640px) {
+  video {
+    max-height: 220px;
+  }
+  img{
+    max-height: 220px;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .date-right {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .vertical-timeline-element-date{
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+    
+  }
+  .vertical-timeline-element-content{
+    opacity: 100;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (min-width: 640px) {
+.vertical-timeline-element-date{
+  color: red;
+}
+}
+
+.intro-div{
+  display: flex;
+  flex: 1;
+
+  
+  background-color: red;
+  padding: 5%;
+  color: white;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.intro-text-div{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 700px;
+}
+
+.indi-text-divb{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.indi-text-divbg{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-weight: bold;
+  padding-top: 1%;
+}
+.indi-text-div{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.intro-ul{
+  margin-top:  1%;
+}
+
+li {
+  margin: 10px 0;
+}
+
+
+.vertical-timeline::before {
+  /* this is the vertical line */
+  background: #ff0000 !important;
+  outline: none;
+}
+
+.App{
+  background-color: #ffffffe5;
+}
+
+.vertical-timeline-element--golf {
+  display: flex;
+  flex: 1;
+  border: 1px solid;
+}
+
+.date-right {
+  color: rgb(255, 255, 255);
+  opacity: 100;
+}
+
+.text-center {
+  font-weight: bold;
+}
+
+.date-left {
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+}
+
+p {
+  margin: 0em;
+  padding: 0em;
+}
+
+ul {
+  margin: 0.5em;
+  padding: 0em;
+  list-style-type:circle;
+}
+
+
+
+.timeline-content{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.center-text2{
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.text-format2{
+  text-align: left;
+  padding: 0%;
+  color: red;
+}
+
+.text-format{
+  text-align: left;
+  padding: 0%;
+}
+
+p2{
+  font-weight: bold;
+}
+
+.video-content{
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.swing-clip {
+  display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 3%;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
+  border-radius: 4%;
+  gap: 7px;
+}
+
+.center-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.left-text {
+  
+  text-align: left;
+  float: left;
+}
+
+
+video {
+  padding: 1%;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  max-width: 200px;
+  border-radius: 2%;
+}
+
+.swing-video {
+  padding: 1%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  border-radius: 2%;
+  border-width: 3rem;
+  background: rgb(223, 220, 220);
+}
+
+.swing-video2 {
+  padding: 1%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  border-radius: 2%;
+  background: hsl(0, 100%, 50%) 
+}
+
+.view-info {
+  
+}
+
+.swing-context{
+  padding-left: 5%;
+  display: flex;
+  flex: 1;
+  align-items: center;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 300px;
+  text-align: center;
 }
