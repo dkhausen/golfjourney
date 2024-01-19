@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import 'react-vertical-timeline-component/style.min.css';
 import Dec162022 from './swing clips/Dec162022.mp4'
 import Dec162022fo from './swing clips/Dec162022fo.mp4'
 import Dec272022 from'./swing clips/Dec272022.mp4'
@@ -22,8 +22,6 @@ import March142023tr from './swing clips/March142023tr.jpg';
 import March142023fs from './swing clips/Mar142023fs.jpg';
 import SportsGolfIcon from '@mui/icons-material/SportsGolf';
 import GolfCourseIcon from '@mui/icons-material/GolfCourse';
-
-
 
 export default function Home() {
   return (
