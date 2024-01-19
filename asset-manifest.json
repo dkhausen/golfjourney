@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f454206.css",
+    "main.js": "/static/js/main.0beddd8c.js",
+    "static/media/Mar142023.mp4": "/static/media/Mar142023.3089695ee14a36736c31.mp4",
+    "static/media/Feb262023.mp4": "/static/media/Feb262023.ddecb05b039ac08d8ed5.mp4",
+    "static/media/Jan272023.mp4": "/static/media/Jan272023.570c889625d27fbf85b9.mp4",
+    "static/media/Dec272022.mp4": "/static/media/Dec272022.44d19c0726fc73cd81bf.mp4",
+    "static/media/Jan062023.mp4": "/static/media/Jan062023.0c9d3fe286d8e15363f2.mp4",
+    "static/media/Jan022023fo.mp4": "/static/media/Jan022023fo.b4b0e43dca7eef25caaa.mp4",
+    "static/media/Dec272022fo.mp4": "/static/media/Dec272022fo.cf9dc3e78ab2336953cc.mp4",
+    "static/media/Dec162022fo.mp4": "/static/media/Dec162022fo.820243ad2bf8edd43010.mp4",
+    "static/media/Dec162022.mp4": "/static/media/Dec162022.dc20b068a2333ed515a7.mp4",
+    "static/media/Jan022023.mp4": "/static/media/Jan022023.a8e4cc1434e443343465.mp4",
+    "static/media/Dec272022analysis2.jpg": "/static/media/Dec272022analysis2.3bd5e4332d661149551b.jpg",
+    "static/media/Dec272022analysis1.jpg": "/static/media/Dec272022analysis1.0884452b36b8b3182dc7.jpg",
+    "static/media/Mar142023fs.jpg": "/static/media/Mar142023fs.0cec22ff27f6d9e9f82b.jpg",
+    "static/media/March142023tr.jpg": "/static/media/March142023tr.8e3b276777d2f7aa62b7.jpg",
+    "static/media/Jan272023lo.jpg": "/static/media/Jan272023lo.2c05f707b48f00e141b7.jpg",
+    "static/media/Feb262023cw.jpg": "/static/media/Feb262023cw.72844acca48aefca2666.jpg",
+    "index.html": "/index.html",
+    "main.8f454206.css.map": "/static/css/main.8f454206.css.map",
+    "main.0beddd8c.js.map": "/static/js/main.0beddd8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f454206.css",
+    "static/js/main.0beddd8c.js"
+  ]
+}
