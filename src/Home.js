@@ -3,6 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
+import { useState } from "react";
 import 'react-vertical-timeline-component/style.min.css';
 import Dec162022 from './swing clips/Dec162022.mp4'
 import Dec162022fo from './swing clips/Dec162022fo.mp4'
@@ -20,6 +21,23 @@ import Feb262023cw from './swing clips/Feb262023cw.jpg';
 import March142023 from './swing clips/Mar142023.mp4';
 import March142023tr from './swing clips/March142023tr.jpg';
 import March142023fs from './swing clips/Mar142023fs.jpg';
+import AfterSwingfo from './swing clips/real_speed_face-on23.mov';
+import AfterSwing from './swing clips/real_speed_dtl23.mov';
+import after1 from './swing clips/after1.jpg';
+import after2 from './swing clips/after2.jpg';
+import after3 from './swing clips/after3.jpg';
+import after4 from './swing clips/after4jpg.jpg';
+import after5 from './swing clips/after5.jpg';
+import after6 from './swing clips/after6.jpg';
+import afterfo1 from './swing clips/afterfo1.jpg';
+import afterfo2 from './swing clips/afterfo2.jpg';
+import afterfo3 from './swing clips/afterfo3.jpg';
+import afterfo4 from './swing clips/afterfo4.jpg';
+import afterfo5 from './swing clips/afterfo5.jpg';
+import afterfo6 from './swing clips/afterfo6.jpg';
+import ToggleVisibility from "./ToggleVisibility";
+
+
 import SportsGolfIcon from '@mui/icons-material/SportsGolf';
 import GolfCourseIcon from '@mui/icons-material/GolfCourse';
 
@@ -37,15 +55,112 @@ export default function Home() {
               <li className="intro-ul">Continuous before and after highlights of swing positions</li>
             </ul>
           </div>
-
+      </div>
+      <div className="before-after">
+        <div className="before-after-second">
+          <div className="ba-div">
+            <div className="center-text">
+              December, 2022
+            </div>
+            <div className="swing-clip">
+              <label className="center-text">
+                <video src={Dec162022} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
+                Down the Line
+              </label>
+              <label className="center-text">
+                <video src={Dec162022fo} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
+                Face On
+              </label>
+            </div>
+          </div>
+          <div className="ba-div">
+            <div className="center-text">
+              December, 2023
+            </div>
+            <div className="swing-clip">
+              <label className="center-text">
+                <video src={AfterSwing} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
+                Down the Line
+              </label>
+              <label className="center-text">
+                <video src={AfterSwingfo} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
+                Face On
+              </label>
+            </div>
+            <div className="hide-show">
+            <ToggleVisibility>
+              <div className="swing-clip">
+                <label className="center-text3">
+                  <img src={after1} className='swing-video'></img>
+                  Setup
+                </label>
+                <label className="center-text3">
+                  <img src={afterfo1} className='swing-video'></img>
+                  Setup Face On
+                </label>
+              </div>
+              <div className="swing-clip">
+                <label className="center-text3">
+                  <img src={after2} className='swing-video'></img>
+                  Arm Parallel 
+                </label>
+                <label className="center-text3">
+                  <img src={afterfo2} className='swing-video'></img>
+                  Arm Parallel FO
+                </label>
+              </div>
+              <div className="swing-clip">
+                <label className="center-text3">
+                  <img src={after3} className='swing-video'></img>
+                  Backswing
+                </label>
+                <label className="center-text3">
+                  <img src={afterfo3} className='swing-video'></img>
+                  Backswing FO
+                </label>
+              </div>
+              <div className="swing-clip">
+                <label className="center-text3">
+                  <img src={after4} className='swing-video'></img>
+                  Arm Parallel DS
+                </label>
+                <label className="center-text3">
+                  <img src={afterfo4} className='swing-video'></img>
+                  Arm Parallel FO DS
+                </label>
+              </div>
+              <div className="swing-clip">
+                <label className="center-text3">
+                  <img src={after5} className='swing-video'></img>
+                  Shaft Parallel DS
+                </label>
+                <label className="center-text3">
+                  <img src={afterfo5} className='swing-video'></img>
+                  Shaft Parallel FO DS
+                </label>
+              </div>
+              <div className="swing-clip">
+                <label className="center-text3">
+                  <img src={after6} className='swing-video'></img>
+                  Impact
+                </label>
+                <label className="center-text3">
+                  <img src={afterfo6} className='swing-video'></img>
+                  Impact FO
+                </label>
+              </div>
+              </ToggleVisibility>
+            </div>
+          </div>
+        </div>
       </div>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="main-container"
-            contentStyle={{ background: "rgb(255,0,41,1)", color: "#fff", border:"3px solid", borderColor: "white" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentStyle={{ background: "rgb(255,0,0)", color: "#fff", border:"3px solid", borderColor: "white" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="December 16, 2022"
-            iconStyle={{ background: "rgb(255,0,41,1)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255,0,0)", color: "#fff" }}
             icon={<SportsGolfIcon />}
             visible={false}
           >
@@ -53,11 +168,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text">
-                    <video src={Dec162022} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={Dec162022} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text">
-                    <video src={Dec162022fo} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={Dec162022fo} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -75,7 +190,7 @@ export default function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(255, 255, 255)", color: "#fff", border:"3px solid", borderColor: "red" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="December 27, 2022"
             dateClassName="date-left"
             iconStyle={{ background: "rgb(255, 255, 255)", color: "rgb(255,0,41)",border:"2px solid" }}
@@ -86,11 +201,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text2">
-                    <video src={Dec272022} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={Dec272022} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text2">
-                    <video src={Dec272022fo} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={Dec272022fo} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -119,10 +234,10 @@ export default function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(255,0,41,1)", color: "#fff", border:"3px solid", borderColor: "white" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentStyle={{ background: "rgb(255,0,0)", color: "#fff", border:"3px solid", borderColor: "white" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="January 2, 2023"
-            iconStyle={{ background: "rgb(255,0,41,1)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255,0,0)", color: "#fff" }}
             icon={<SportsGolfIcon />}
             visible={false}
           >
@@ -130,11 +245,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text">
-                    <video src={Jan022023} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={Jan022023} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text">
-                    <video src={Jan022023fo} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={Jan022023fo} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -152,10 +267,9 @@ export default function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(255, 255, 255)", color: "#fff", border:"3px solid", borderColor: "red" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="January 6, 2023"
             dateClassName="date-left"
-        
             iconStyle={{ background: "rgb(255, 255, 255)", color: "rgb(255,0,41)",border:"2px solid" }}
             icon={<SportsGolfIcon />}
             visible={false}
@@ -164,7 +278,7 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text2">
-                    <video src={Jan062023} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={Jan062023} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                 </div>
@@ -179,10 +293,10 @@ export default function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(255,0,41,1)", color: "#fff", border:"3px solid", borderColor: "white" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentStyle={{ background: "rgb(255,0,0)", color: "#fff", border:"3px solid", borderColor: "white" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="January 27, 2023"
-            iconStyle={{ background: "rgb(255,0,41,1)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255,0,0)", color: "#fff" }}
             icon={<SportsGolfIcon />}
             visible={false}
           >
@@ -190,7 +304,7 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text">
-                    <video src={Jan272023} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={Jan272023} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text">
@@ -211,10 +325,9 @@ export default function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(255, 255, 255)", color: "#fff", border:"3px solid", borderColor: "red" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="February 26, 2023"
             dateClassName="date-left"
-        
             iconStyle={{ background: "rgb(255, 255, 255)", color: "rgb(255,0,41)",border:"2px solid" }}
             icon={<SportsGolfIcon />}
             visible={false}
@@ -223,7 +336,7 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text2">
-                    <video src={Feb262023} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={Feb262023} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text2">
@@ -243,10 +356,10 @@ export default function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(255,0,41,1)", color: "#fff", border:"3px solid", borderColor: "white" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentStyle={{ background: "rgb(255,0,0)", color: "#fff", border:"3px solid", borderColor: "white" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="March 14, 2023"
-            iconStyle={{ background: "rgb(255,0,41,1)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255,0,0)", color: "#fff" }}
             icon={<SportsGolfIcon />}
             visible={false}
           >
@@ -254,7 +367,7 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text">
-                    <video src={March142023} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={March142023} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Down the Line
                   </label>
                   <label className="center-text">
@@ -281,7 +394,7 @@ export default function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(255, 255, 255)", color: "#fff", border:"3px solid", borderColor: "red" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="xxx"
             dateClassName="date-left"
         
@@ -293,11 +406,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -312,11 +425,10 @@ export default function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(255,0,41,1)", color: "#fff", border:"3px solid", borderColor: "white" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentStyle={{ background: "rgb(255,0,0)", color: "#fff", border:"3px solid", borderColor: "white" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="xxx"
-          
-            iconStyle={{ background: "rgb(255,0,41,1)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255,0,0)", color: "#fff" }}
             icon={<SportsGolfIcon />}
             visible={false}
           >
@@ -324,11 +436,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -344,7 +456,7 @@ export default function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(255, 255, 255)", color: "#fff", border:"3px solid", borderColor: "red" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="xxx"
             dateClassName="date-left"
         
@@ -356,11 +468,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -375,10 +487,10 @@ export default function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(255,0,41,1)", color: "#fff", border:"3px solid", borderColor: "white" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentStyle={{ background: "rgb(255,0,0)", color: "#fff", border:"3px solid", borderColor: "white" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="xxx"
-            iconStyle={{ background: "rgb(255,0,41,1)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255,0,0)", color: "#fff" }}
             icon={<SportsGolfIcon />}
             visible={false}
           >
@@ -386,11 +498,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -406,10 +518,9 @@ export default function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(255, 255, 255)", color: "#fff", border:"3px solid", borderColor: "red" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="xxx"
             dateClassName="date-left"
-        
             iconStyle={{ background: "rgb(255, 255, 255)", color: "rgb(255,0,41)",border:"2px solid" }}
             icon={<SportsGolfIcon />}
             visible={false}
@@ -418,11 +529,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -437,11 +548,10 @@ export default function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(255,0,41,1)", color: "#fff", border:"3px solid", borderColor: "white" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentStyle={{ background: "rgb(255,0,0)", color: "#fff", border:"3px solid", borderColor: "white" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="xxx"
-            
-            iconStyle={{ background: "rgb(255,0,41,1)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255,0,0)", color: "#fff" }}
             icon={<SportsGolfIcon />}
             visible={false}
           >
@@ -449,11 +559,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
@@ -469,7 +579,7 @@ export default function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(255, 255, 255)", color: "#fff", border:"3px solid", borderColor: "red" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,41,1)" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255,0,0)" }}
             date="xxx"
             dateClassName="date-left"
         
@@ -481,11 +591,11 @@ export default function Home() {
               <div className="video-content">
                 <div className="swing-clip">
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'></video>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
                     Down the Line
                   </label>
                   <label className="center-text2">
-                    <video src={''} controls="controls" autoplay="true" className='swing-video' playsinline ='true'/>
+                    <video src={''} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
                     Face On
                   </label>
                 </div>
