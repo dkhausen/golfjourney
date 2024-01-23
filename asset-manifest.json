@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/golfjourney/static/css/main.8f454206.css",
-    "main.js": "/golfjourney/static/js/main.b5f733d7.js",
+    "main.css": "/golfjourney/static/css/main.f39cb71a.css",
+    "main.js": "/golfjourney/static/js/main.697472e7.js",
+    "static/media/real_speed_face-on23.mov": "/golfjourney/static/media/real_speed_face-on23.6b422b23758c80cd06eb.mov",
+    "static/media/real_speed_dtl23.mov": "/golfjourney/static/media/real_speed_dtl23.280c2c1203f752012a73.mov",
     "static/media/Mar142023.mp4": "/golfjourney/static/media/Mar142023.3089695ee14a36736c31.mp4",
     "static/media/Feb262023.mp4": "/golfjourney/static/media/Feb262023.ddecb05b039ac08d8ed5.mp4",
     "static/media/Jan272023.mp4": "/golfjourney/static/media/Jan272023.570c889625d27fbf85b9.mp4",
@@ -12,18 +14,30 @@
     "static/media/Dec162022fo.mp4": "/golfjourney/static/media/Dec162022fo.820243ad2bf8edd43010.mp4",
     "static/media/Dec162022.mp4": "/golfjourney/static/media/Dec162022.dc20b068a2333ed515a7.mp4",
     "static/media/Jan022023.mp4": "/golfjourney/static/media/Jan022023.a8e4cc1434e443343465.mp4",
+    "static/media/afterfo3.jpg": "/golfjourney/static/media/afterfo3.7e4139c4f40ccf235c28.jpg",
+    "static/media/afterfo1.jpg": "/golfjourney/static/media/afterfo1.44ebe0b443b6812bae05.jpg",
+    "static/media/afterfo2.jpg": "/golfjourney/static/media/afterfo2.79bc5af08098d47a52f9.jpg",
+    "static/media/afterfo6.jpg": "/golfjourney/static/media/afterfo6.879ae0999db83f809340.jpg",
+    "static/media/afterfo4.jpg": "/golfjourney/static/media/afterfo4.2c349fb7b5bc9484b29e.jpg",
+    "static/media/afterfo5.jpg": "/golfjourney/static/media/afterfo5.033ac3e5ce4881d06a85.jpg",
+    "static/media/after3.jpg": "/golfjourney/static/media/after3.a35471abb7f4b6c0a003.jpg",
+    "static/media/after1.jpg": "/golfjourney/static/media/after1.f4010c2e2f178631488e.jpg",
     "static/media/Dec272022analysis2.jpg": "/golfjourney/static/media/Dec272022analysis2.3bd5e4332d661149551b.jpg",
+    "static/media/after6.jpg": "/golfjourney/static/media/after6.a95e12a0453e3666a741.jpg",
+    "static/media/after4jpg.jpg": "/golfjourney/static/media/after4jpg.541b929b43bdcb8b3ae9.jpg",
+    "static/media/after2.jpg": "/golfjourney/static/media/after2.55a6ac8d49a9a357df88.jpg",
+    "static/media/after5.jpg": "/golfjourney/static/media/after5.2f02b0cad17d9ab93503.jpg",
     "static/media/Dec272022analysis1.jpg": "/golfjourney/static/media/Dec272022analysis1.0884452b36b8b3182dc7.jpg",
     "static/media/Mar142023fs.jpg": "/golfjourney/static/media/Mar142023fs.0cec22ff27f6d9e9f82b.jpg",
     "static/media/March142023tr.jpg": "/golfjourney/static/media/March142023tr.8e3b276777d2f7aa62b7.jpg",
     "static/media/Jan272023lo.jpg": "/golfjourney/static/media/Jan272023lo.2c05f707b48f00e141b7.jpg",
     "static/media/Feb262023cw.jpg": "/golfjourney/static/media/Feb262023cw.72844acca48aefca2666.jpg",
     "index.html": "/golfjourney/index.html",
-    "main.8f454206.css.map": "/golfjourney/static/css/main.8f454206.css.map",
-    "main.b5f733d7.js.map": "/golfjourney/static/js/main.b5f733d7.js.map"
+    "main.f39cb71a.css.map": "/golfjourney/static/css/main.f39cb71a.css.map",
+    "main.697472e7.js.map": "/golfjourney/static/js/main.697472e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f454206.css",
-    "static/js/main.b5f733d7.js"
+    "static/css/main.f39cb71a.css",
+    "static/js/main.697472e7.js"
   ]
 }
