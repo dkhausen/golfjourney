@@ -18,6 +18,8 @@
   .vertical-timeline-element-content{
     opacity: 100;
   }
+
+
 }
 
 @media only screen and (min-width: 640px) {
@@ -31,13 +33,11 @@
   flex: 1;
   justify-content: center;
   padding: 1%;
-  
-  
 }
 
 .center-text3 {
   font: white;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
 }
@@ -54,8 +54,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: #ff0000;
-  gap: 30px;
-  
+  width: 450px;
 }
 
 .ba-div{
@@ -155,6 +154,47 @@ ul {
   list-style-type:circle;
 }
 
+.center-button2{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #24292E;
+  background-color: #FAFBFC;
+
+}
+
+.center-button{
+
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+
+}
+
+
+
 
 
 .timeline-content{
@@ -165,6 +205,7 @@ ul {
 
 .center-text2{
   text-align: center;
+  justify-content: center;
   font-weight: bold;
   color: red;
 }
@@ -202,11 +243,42 @@ p2{
   flex-direction: row;
   border-radius: 4%;
   gap: 7px;
+  text-align: center;
+}
+
+.swing-clip4 {
+  display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 3%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4%;
+  gap: 7px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wrap-images {
+  display: flex;
+  gap: 7px;
+  flex-direction: row;
 }
 
 .center-text {
   text-align: center;
   font-weight: bold;
+}
+
+.center-text4 {
+  display: flex;
+  flex: 1;
+  justify-content: ;
+  text-align: center;
+  font-weight: bold;
+  flex-direction: row;
 }
 
 .left-text {
@@ -221,7 +293,7 @@ video {
   display:flex;
   justify-content: center;
   align-items: center;
-  max-width: 200px;
+
   border-radius: 2%;
 }
 
@@ -241,7 +313,7 @@ video {
   display:flex;
   justify-content: center;
   align-items: center;
-  max-width: 200px;
+  max-height: 210px;
   border-radius: 2%;
   background: hsl(0, 100%, 50%) 
 }
