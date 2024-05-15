@@ -13,7 +13,7 @@ import afterfo3 from './swing clips/afterfo3.jpg';
 import afterfo4 from './swing clips/afterfo4.jpg';
 import afterfo5 from './swing clips/afterfo5.jpg';
 import afterfo6 from './swing clips/afterfo6.jpg';
-import before1 from './swing clips/before1.jpg'
+import before1 from './swing clips/before1.png'
 import before2 from './swing clips/before2.jpg'
 import before3 from './swing clips/before3.jpg'
 import before4 from './swing clips/before4.jpg'
@@ -28,19 +28,46 @@ import before6fo from './swing clips/before6fo.jpg'
 import ToggleVisibility from "./ToggleVisibility";
 import Dec162022 from './swing clips/Dec162022.mp4'
 import Dec162022fo from './swing clips/Dec162022fo.mp4'
+import { useState } from "react";
+
+
 
 export default function BeforeAfter() {
+    
+    const [imgState, setImgState] = useState(false);
+    const [imgState2, setImgState2] = useState(false)
+    const [videoPlayState, setVideoPlayState] = useState(0);
+
+ 
+
+    function handleClick(){
+        setImgState(imgState => 'active');
+        setVideoPlayState(videoPlayState => '1');
+        console.log("image clicked")
+    }
+
+    function handleClick2(){
+        setImgState2(imgState2 => 'active');
+        setVideoPlayState(videoPlayState => '1');
+        console.log("image clicked")
+    }
+
+    let toggleClassCheck = imgState;
+    let toggleClassCheck2 = imgState2;
+    
     return (
         <div className="before-after">
         <div className="before-after-second">
           <div className="ba-div">
             <div className="swing-clip">
               <label className="center-text">
-                <video src={Dec162022} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
+              <img src={before1} className={`img1${toggleClassCheck}`} onClick={handleClick}></img>
+                <video src={Dec162022} controls="controls" autoplay="0" className='swing-video' playsinline ='true'></video>
                 December, 2022
               </label>
               <label className="center-text">
-                <video src={AfterSwing} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
+              <img src={after1} className={`img1${toggleClassCheck2}`} onClick={handleClick2}></img>
+                <video src={AfterSwing} controls="controls" autoplay="0" className='swing-video' playsinline ='true'/>
                 December, 2023
               </label>
             </div>
@@ -50,18 +77,19 @@ export default function BeforeAfter() {
             </div>
             <div className="swing-clip">
               <label className="center-text">
-                <video src={Dec162022fo} controls="controls" autoplay="false" className='swing-video' playsinline ='true'></video>
+              
+                <video src={Dec162022fo} controls="controls" autoplay="0" className='swing-video' playsinline ='true'></video>
                 December, 2022
               </label>
               <label className="center-text">
-                <video src={AfterSwingfo} controls="controls" autoplay="false" className='swing-video' playsinline ='true'/>
+                <video src={AfterSwingfo} controls="controls" autoplay="0" className='swing-video' playsinline ='true'/>
                 December, 2023
               </label>
             </div>
         </div>
             
             <ToggleVisibility>
-                <div className="center-button2">
+                
                 <div className="swing-clip4">
                     Setup
                     <div className="wrap-images">
@@ -128,7 +156,7 @@ export default function BeforeAfter() {
                         </div>
                     </div>
                 </div>
-                </div>
+                
             </ToggleVisibility>
             
             </div>
