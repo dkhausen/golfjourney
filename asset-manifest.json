@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/golfjourney/static/css/main.2e2b61be.css",
-    "main.js": "/golfjourney/static/js/main.c1d1f979.js",
+    "main.js": "/golfjourney/static/js/main.cbeb9773.js",
     "static/media/real_speed_face-on23.mov": "/golfjourney/static/media/real_speed_face-on23.6b422b23758c80cd06eb.mov",
     "static/media/real_speed_dtl23.mov": "/golfjourney/static/media/real_speed_dtl23.280c2c1203f752012a73.mov",
     "static/media/Mar142023.mp4": "/golfjourney/static/media/Mar142023.3089695ee14a36736c31.mp4",
@@ -47,10 +47,10 @@
     "static/media/Feb262023cw.jpg": "/golfjourney/static/media/Feb262023cw.72844acca48aefca2666.jpg",
     "index.html": "/golfjourney/index.html",
     "main.2e2b61be.css.map": "/golfjourney/static/css/main.2e2b61be.css.map",
-    "main.c1d1f979.js.map": "/golfjourney/static/js/main.c1d1f979.js.map"
+    "main.cbeb9773.js.map": "/golfjourney/static/js/main.cbeb9773.js.map"
   },
   "entrypoints": [
     "static/css/main.2e2b61be.css",
-    "static/js/main.c1d1f979.js"
+    "static/js/main.cbeb9773.js"
   ]
 }
