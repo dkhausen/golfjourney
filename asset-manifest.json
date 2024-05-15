@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/golfjourney/static/css/main.16414c3c.css",
-    "main.js": "/golfjourney/static/js/main.bf4f23fb.js",
+    "main.css": "/golfjourney/static/css/main.2e2b61be.css",
+    "main.js": "/golfjourney/static/js/main.c1d1f979.js",
     "static/media/real_speed_face-on23.mov": "/golfjourney/static/media/real_speed_face-on23.6b422b23758c80cd06eb.mov",
     "static/media/real_speed_dtl23.mov": "/golfjourney/static/media/real_speed_dtl23.280c2c1203f752012a73.mov",
     "static/media/Mar142023.mp4": "/golfjourney/static/media/Mar142023.3089695ee14a36736c31.mp4",
     "static/media/Feb262023.mp4": "/golfjourney/static/media/Feb262023.ddecb05b039ac08d8ed5.mp4",
     "static/media/BeforeAfterTogether.mp4": "/golfjourney/static/media/BeforeAfterTogether.fa09808dc77d5b780b55.mp4",
     "static/media/Jan272023.mp4": "/golfjourney/static/media/Jan272023.570c889625d27fbf85b9.mp4",
+    "static/media/before1.png": "/golfjourney/static/media/before1.b6faa4787a9e3829fbc6.png",
     "static/media/Dec272022.mp4": "/golfjourney/static/media/Dec272022.44d19c0726fc73cd81bf.mp4",
     "static/media/Jan062023.mp4": "/golfjourney/static/media/Jan062023.0c9d3fe286d8e15363f2.mp4",
     "static/media/Jan022023fo.mp4": "/golfjourney/static/media/Jan022023fo.b4b0e43dca7eef25caaa.mp4",
@@ -40,17 +41,16 @@
     "static/media/before4.jpg": "/golfjourney/static/media/before4.9b26fca36afc79b5cca3.jpg",
     "static/media/before5.jpg": "/golfjourney/static/media/before5.2f29efb3086086a1ae11.jpg",
     "static/media/before6.jpg": "/golfjourney/static/media/before6.76ee4326edb03092249d.jpg",
-    "static/media/before1.jpg": "/golfjourney/static/media/before1.6021571b836b9113a5f9.jpg",
     "static/media/Mar142023fs.jpg": "/golfjourney/static/media/Mar142023fs.0cec22ff27f6d9e9f82b.jpg",
     "static/media/March142023tr.jpg": "/golfjourney/static/media/March142023tr.8e3b276777d2f7aa62b7.jpg",
     "static/media/Jan272023lo.jpg": "/golfjourney/static/media/Jan272023lo.2c05f707b48f00e141b7.jpg",
     "static/media/Feb262023cw.jpg": "/golfjourney/static/media/Feb262023cw.72844acca48aefca2666.jpg",
     "index.html": "/golfjourney/index.html",
-    "main.16414c3c.css.map": "/golfjourney/static/css/main.16414c3c.css.map",
-    "main.bf4f23fb.js.map": "/golfjourney/static/js/main.bf4f23fb.js.map"
+    "main.2e2b61be.css.map": "/golfjourney/static/css/main.2e2b61be.css.map",
+    "main.c1d1f979.js.map": "/golfjourney/static/js/main.c1d1f979.js.map"
   },
   "entrypoints": [
-    "static/css/main.16414c3c.css",
-    "static/js/main.bf4f23fb.js"
+    "static/css/main.2e2b61be.css",
+    "static/js/main.c1d1f979.js"
   ]
 }
